@@ -1,0 +1,13 @@
+#mygrid{
+	margin-top:25px;
+}
+#output{
+	margin-top:25px;
+}
+.tbl-base th{
+	background: #f1f1f1;
+}
+.tbl-base tr.selected-row{
+	background: green;
+	color: #ffffff;
+}

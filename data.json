@@ -1,0 +1,39 @@
+{
+	"data": [{
+		"userId": "1",
+		"userName": "Priya",
+		"address": "Pune",
+		"mobileNo": "9766358808"
+	},{
+		"userId": "2",
+		"userName": "Manjit",
+		"address": "Sangli",
+		"mobileNo": "9960653763"
+	},{
+		"userId": "3",
+		"userName": "Manjit",
+		"address": "Sangli",
+		"mobileNo": "9960653763"
+	},{
+		"userId": "4",
+		"userName": "Manjit",
+		"address": "Sangli",
+		"mobileNo": "9960653763"
+	},{
+		"userId": "5",
+		"userName": "Manjit",
+		"address": "Sangli",
+		"mobileNo": "9960653763"
+	},{
+		"userId": "6",
+		"userName": "Manjit",
+		"address": "Sangli",
+		"mobileNo": "9960653763"
+	},{
+		"userId": "7",
+		"userName": "Manjit",
+		"address": "Sangli",
+		"mobileNo": "9960653763"
+	}],
+	"totalCount": "7"
+}

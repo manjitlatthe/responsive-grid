@@ -1,0 +1,53 @@
+<html>
+<head>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<button id="btn-1">Selected Rows Count</button>
+	<button id="btn-2">Selected Row Ids</button>
+	<button id="btn-3">Selected Rows</button>
+	
+	<div id="output"></div>
+	<div id="mygrid"></div>
+			
+	<script src="jquery.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="main.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#mygrid').basegrid({
+				primaryKey: 'userId',
+				ajaxUrl: 'json.php',
+				multiSelect: true,
+				//method: 'POST',
+				columns: [
+					{ field: 'userId', displayName: 'userId', hidden: true },
+					{ field: 'userName', displayName: 'Name' },
+					{ field: 'address', displayName: 'Address' },
+					{ field: 'mobileNo', displayName: 'Mobile No' }
+				],
+				pagination:{
+					pageSize: 15,
+					pageLimit: 5
+				}
+			});
+			
+			$('#btn-1').on('click', function(e){
+				e.preventDefault();
+				$('#output').html("Selected Rows Count: " + JSON.stringify($('#mygrid').basegrid.getSelectedRowCount()));
+			});
+			
+			$('#btn-2').on('click', function(e){
+				e.preventDefault();
+				$('#output').html("Selected Ids: " + JSON.stringify($('#mygrid').basegrid.getSelectedRowIds()));
+			});
+			
+			$('#btn-3').on('click', function(e){
+				e.preventDefault();
+				$('#output').html("Selected Rows: " + JSON.stringify($('#mygrid').basegrid.getSelectedRows()));
+			});
+		});
+	</script>
+</body>
+</html>
